@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Sorting Algorithm Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sorting Algorithm Visualizer</h1>
+            <p>Interactive step-by-step visualization of sorting algorithms</p>
+        </header>
+
+        <div class="controls-panel">
+            <div class="control-group">
+                <label for="algorithm-select">Algorithm:</label>
+                <select id="algorithm-select">
+                    <optgroup label="Basic Comparison-Based">
+                        <option value="bubble">Bubble Sort</option>
+                        <option value="selection">Selection Sort</option>
+                        <option value="insertion">Insertion Sort</option>
+                        <option value="merge">Merge Sort</option>
+                        <option value="quick">Quick Sort</option>
+                        <option value="heap">Heap Sort</option>
+                    </optgroup>
+                    <optgroup label="Advanced">
+                        <option value="shell">Shell Sort</option>
+                        <option value="tim">Tim Sort</option>
+                        <option value="intro">Intro Sort</option>
+                    </optgroup>
+                    <optgroup label="Non-Comparison">
+                        <option value="counting">Counting Sort</option>
+                        <option value="radix">Radix Sort</option>
+                        <option value="bucket">Bucket Sort</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="array-size">Array Size:</label>
+                <input type="range" id="array-size" min="10" max="100" value="50">
+                <span id="size-value">50</span>
+            </div>
+
+            <div class="control-group">
+                <label for="speed">Speed:</label>
+                <input type="range" id="speed" min="1" max="10" value="5">
+                <span id="speed-value">5</span>
+            </div>
+
+            <div class="control-group">
+                <label for="data-type">Data Pattern:</label>
+                <select id="data-type">
+                    <option value="random">Random</option>
+                    <option value="sorted">Already Sorted</option>
+                    <option value="reverse">Reverse Sorted</option>
+                    <option value="nearly">Nearly Sorted</option>
+                    <option value="duplicates">Many Duplicates</option>
+                </select>
+            </div>
+
+            <div class="button-group">
+                <button id="generate-btn">Generate New Array</button>
+                <button id="play-btn">Play</button>
+                <button id="pause-btn" disabled>Pause</button>
+                <button id="step-btn">Step</button>
+                <button id="reset-btn">Reset</button>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="visualization-area">
+                <div id="array-container" class="array-container"></div>
+                <div class="legend">
+                    <div class="legend-item">
+                        <div class="legend-color comparing"></div>
+                        <span>Comparing</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color swapping"></div>
+                        <span>Swapping</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color sorted"></div>
+                        <span>Sorted</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color pivot"></div>
+                        <span>Pivot</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-panel">
+                <div class="algorithm-info">
+                    <h3>Algorithm Information</h3>
+                    <div id="algorithm-details">
+                        <p><strong>Time Complexity:</strong> <span id="time-complexity">-</span></p>
+                        <p><strong>Space Complexity:</strong> <span id="space-complexity">-</span></p>
+                        <p><strong>Stable:</strong> <span id="stable">-</span></p>
+                        <p><strong>In-place:</strong> <span id="in-place">-</span></p>
+                    </div>
+                </div>
+
+                <div class="statistics">
+                    <h3>Statistics</h3>
+                    <div id="stats">
+                        <p><strong>Comparisons:</strong> <span id="comparisons">0</span></p>
+                        <p><strong>Swaps:</strong> <span id="swaps">0</span></p>
+                        <p><strong>Array Accesses:</strong> <span id="accesses">0</span></p>
+                        <p><strong>Time Elapsed:</strong> <span id="time-elapsed">0ms</span></p>
+                    </div>
+                </div>
+
+                <div class="step-info">
+                    <h3>Current Step</h3>
+                    <div id="step-description">
+                        <p>Click "Generate New Array" to start</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="code-panel">
+            <h3>Algorithm Steps</h3>
+            <div id="code-visualization">
+                <pre id="code-display"></pre>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/algorithms.js"></script>
+    <script src="js/visualizer.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
