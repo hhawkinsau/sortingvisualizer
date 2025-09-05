@@ -1,0 +1,35 @@
+{
+  "name": "sorting-algorithm-visualizer",
+  "version": "1.0.0",
+  "description": "Interactive step-by-step visualization of sorting algorithms with comprehensive educational features",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "install-browsers": "npx playwright install",
+    "dev": "python3 -m http.server 8001"
+  },
+  "keywords": [
+    "sorting",
+    "algorithms",
+    "visualization",
+    "education",
+    "computer-science",
+    "interactive",
+    "learning"
+  ],
+  "author": "hhawkinsau",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hhawkinsau/sortingvisualizer.git"
+  },
+  "homepage": "https://github.com/hhawkinsau/sortingvisualizer",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

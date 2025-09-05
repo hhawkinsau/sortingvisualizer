@@ -1,6 +1,124 @@
+# Interactive Sorting Algorithm Visualizer
+
+An interactive, step-by-step visualization tool for sorting algorithms with comprehensive educational features. This project transforms sorting algorithm theory into an engaging visual learning experience.
+
+## 🚀 Live Demo
+
+Open `index.html` in your browser or run a local server to see the algorithms in action!
+
+## ✨ Features
+
+### 🎯 Interactive Visualization
+- **Step-by-step animations** showing exactly how each algorithm works
+- **Color-coded operations**: comparisons (red), swaps (yellow), sorted elements (green), pivots (purple)
+- **Real-time statistics**: comparisons, swaps, array accesses, and time elapsed
+- **Responsive design** that works on desktop and mobile devices
+
+### 🧠 Educational Content
+- **12 sorting algorithms** with detailed implementations
+- **Algorithm complexity information** displayed in real-time
+- **Pseudocode display** for each algorithm
+- **Multiple data patterns** to explore algorithm behavior
+
+### 🎮 Interactive Controls
+- **Speed control** (1-10 scale) to adjust animation speed
+- **Array size control** (10-100 elements) 
+- **Data pattern selection**: random, sorted, reverse, nearly sorted, duplicates
+- **Keyboard shortcuts** for power users
+- **Play/Pause/Step/Reset** controls for precise learning
+
+## 🚀 Quick Start
+
+### Option 1: Simple Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/hhawkinsau/sortingvisualizer.git
+   cd sortingvisualizer
+   ```
+
+2. Open `index.html` in your web browser
+
+### Option 2: Local Server
+1. Install dependencies (optional, for testing):
+   ```bash
+   npm install
+   ```
+
+2. Start local server:
+   ```bash
+   npm start
+   ```
+
+3. Open http://localhost:8000 in your browser
+
+## 🎮 How to Use
+
+1. **Select an Algorithm**: Choose from 12 different sorting algorithms
+2. **Adjust Settings**: Set array size (10-100) and speed (1-10)
+3. **Choose Data Pattern**: Random, sorted, reverse, nearly sorted, or duplicates
+4. **Start Visualization**: Click "Play" to watch the algorithm in action
+5. **Learn**: Follow the step-by-step explanations and statistics
+
+### Keyboard Shortcuts
+- **Space**: Play/Pause
+- **R**: Reset Array
+- **G**: Generate New Array
+- **S**: Step (when paused)
+- **Esc**: Stop Sorting
+
+## 🧮 Implemented Algorithms
+
+### Basic Comparison-Based
+- Bubble Sort
+- Selection Sort  
+- Insertion Sort
+- Merge Sort
+- Quick Sort
+- Heap Sort
+
+### Advanced (Coming Soon)
+- Shell Sort
+- Tim Sort
+- Intro Sort
+- Counting Sort
+- Radix Sort
+- Bucket Sort
+
+## 🧪 Testing
+
+Run the test suite to verify functionality:
+
+```bash
+# Install Playwright (first time only)
+npm run install-browsers
+
+# Run tests
+npm test
+
+# Run tests with browser UI
+npm run test:headed
+```
+
+## 🎨 Technology Stack
+
+- **HTML5**: Semantic structure
+- **CSS3**: Modern styling with animations and glassmorphism effects
+- **JavaScript ES6+**: Modular architecture with classes
+- **Playwright**: End-to-end testing
+
+## 📚 Educational Value
+
+This visualizer helps students and developers:
+- **Understand** how different algorithms work step-by-step
+- **Compare** algorithm efficiency in real-time
+- **Experiment** with different data patterns
+- **Learn** through interactive exploration rather than static text
+
+---
+
 # Comprehensive Guide to Sorting Algorithms
 
-A complete reference for sorting algorithms across different domains and use cases, from basic array sorting to database operations and specialized applications.
+Below is the complete reference for sorting algorithms across different domains and use cases, from basic array sorting to database operations and specialized applications.
 
 ## Table of Contents
 
